@@ -1,5 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
+import './styles/appStyle'
 
 import Revealer from './js/Revealer'
 import classie from './js/classie'
@@ -35,11 +36,6 @@ class Greeting extends React.Component {
         currentPage = currentPage === 0 ? 1 : 0
         classie.add(pages[currentPage], 'page--current')
       }
-
-    log('pages', pages)
-    log('currentPage', currentPage)
-    log(currentPage)
-
     revealer.reveal(direction, callbackTime, callbackFn)
   }
 
